@@ -122,7 +122,7 @@ class _CreateArticlePageState extends State<CreateArticlePage> {
       
       // 7. Esperar y regresar
       await Future.delayed(const Duration(milliseconds: 1000));
-      Navigator.pop(context);
+      Navigator.pop(context, true);
       
     } catch (e) {
       print('❌ Error al guardar artículo: $e');
